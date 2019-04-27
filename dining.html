@@ -8,27 +8,29 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
 	<!--
 	<script src = "js/script.js"></script>
 	-->
 </head>
 <body>
 <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
-	<div class="container">
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
-			<span Class="navbar-toggler-icon"></span>
-		</button>
-		<a class="navbar-brand mr-auto" href="#">EMORY</a>
-		<div class="collapse navbar-collapse" id="Navbar">
-			<ul class="navbar-nav mr-auto">
-				<li class="nav-item"><a class="nav-link" href="./index.html">HOME</a></li>
-                <li class="nav-item"><a class="nav-link" href="./accommodations.html">ACCOMMODATIONS</a></li>
-                <li class="nav-item active"><a class="nav-link" href="./dining.html">DINING</a></li>
-                <li class="nav-item"><a class="nav-link" href="./career.html">CAREER</a></li>
-                <li class="nav-item"><a class="nav-link" href="./contact.html">CONTACT US</a></li>
-			</ul>
-		</div>
-	</div>
+    <div class="container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+            <span Class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand mr-auto" href="#"> EMORY </a>
+        <div class="collapse navbar-collapse" id="Navbar">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link" href="./index.html"><span class="fa fa-home fa-lg"></span> HOME</a></li>
+                <li class="nav-item"><a class="nav-link" href="./accommodations.html"><span class="fa fa-hotel fa-lg"></span> ACCOMMODATIONS</a></li>
+                <li class="nav-item active"><a class="nav-link" href="./dining.html"><span class="fa fa-cutlery fa-lg"></span> DINING</a></li>
+                <li class="nav-item"><a class="nav-link" href="./career.html"><span class="fa fa-user-circle fa-lg"></span> CAREER</a></li>
+                <li class="nav-item"><a class="nav-link" href="./contact.html"><span class="fa fa-address-book fa-lg"></span> CONTACT US</a></li>
+            </ul>
+        </div>
+    </div>
 </nav>
 	 <header class="jumbotron">
         <div class="container">
@@ -44,17 +46,28 @@
     <div class="col-12">
         <ol class="col-12 breadcrumb">
             <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
-            <li class="breadcrumb-item active"><a href="./dining.html">Dining</a></li>
+            <li class="breadcrumb-item active">Dining</li>
         </ol>
     </div>
+
+
     <div class="container">
         <div class="row row-content align-item-center">
             <div class="col-12 col-sm-4 order-sm-last col-md-3">
                 <h3>Our Lipsmacking Culinary Creations</h3>
             </div>
             <div class="col-12 col-sm order-sm-first col-md">
-                <h2>Uthappizza</h2>
-                <p>A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
+                <div class="media">
+                    <img class="d-flex mr-3 img-thumbnail align-self-center images" id="dining"
+                            src="img/dining.jpg" alt="dining">
+                    <div class="media-body">
+                        <h2 class="mt-0"> Fine Dining <span class="badge badge-danger">HOT</span> <span class="badge badge-pill badge-secondary">$4.99</span></h2>
+                        <p class="d-none d-sm-block">A unique combination of Indian Uthappam (pancake) and
+                            Italian pizza, topped with Cerignola olives, ripe vine
+                            cherry tomatoes, Vidalia onion, Guntur chillies and
+                            Buffalo Paneer.</p>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -74,9 +87,19 @@
                 <h3>Meet our Culinary Specialists</h3>
             </div>
             <div class="col-12 col-sm col-md order-sm-first">
-                <h2>Alberto Somayya</h2>
-                <h4>Executive Chef</h4>
-                <p>Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. </p>
+                <div class="media">
+                    <img class="d-flex mr-3 img-thumbnail align-self-center images"
+                            src="img/chef.jpeg" alt="chef">
+                    <div class="media-body">
+                        <h2 class="mt-0">Alberto Somayya</h2>
+                        <h4>Executive Chef</h4>
+                        <p class="d-none d-sm-block">Award winning three-star Michelin chef with wide
+                            International experience having worked closely with
+                            whos-who in the culinary world, he specializes in
+                            creating mouthwatering Indo-Italian fusion experiences.
+                            </p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -84,33 +107,33 @@
     <footer class="footer">
         <div class="container">
             <div class="row">             
-                <div class="col-4 offset-1 col-sm-2">
+                <div class="col-5 col-sm-3">
                     <h5>Links</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="./index.html">HOME</a></li>
-                        <li><a href="./accommodations.html">ACCOMMODATIONS</a></li>
-                        <li><a href="./dining.html">DINING</a></li>
-                        <li><a href="./career.html">CAREER</a></li>
-                        <li><a href="./contact.html">CONTACT US</a></li>
+                    <ul class="list-unstyled" id= "links">
+                        <li><a href="./index.html"> HOME <span class="fa fa-home "></span></a></li>
+                        <li><a href="./accommodations.html"> ACCOMMODATIONS <span class="fa fa-hotel fa-lg"></span></a></li>
+                        <li><a href="./dining.html"> DINING <span class="fa fa-cutlery "></span></a></li>
+                        <li><a href="./career.html"> CAREER <span class="fa fa-user-circle"></span></a></li>
+                        <li><a href="./contact.html"> CONTACT US <span class="fa fa-address-card"></span></a></li>
                     </ul>
                 </div>
                 <div class="col-7 col-sm-5">
                     <h5>Address</h5>
                     <address>
-		              1615 Clifton Road NE<br>
-		              Atlanta, GA 30329<br>
-		              Phone: 404-712-6000<br>
-		              Toll Free: 1-800-933-6679<br>  
-		              Fax: 404-712-6025<br>
-		              Email: <a href="mailto:yxion29@emory.edu">yxion29@emory.edu</a>
-		           </address>
+                      1615 Clifton Road NE<br>
+                      Atlanta, GA 30329<br>
+                      <i class="fa fa-phone"></i>: 404-712-6000<br>
+                      <i class="fa fa-phone"></i>: 1-800-933-6679 (Toll-Free)<br>  
+                      <i class="fa fa-fax"></i>: 404-712-6025<br>
+                      <i class="fa fa-envelope"></i>: <a href="mailto:guesthelp@ecch.emory.edu">guesthelp@ecch.emory.edu</a>
+                   </address>
                 </div>
                 <div class="col-12 col-sm-4 align-self-center">
-                    <div class="text-center">
-                        <a href="http://google.com/+">Google+</a>
-                        <a href="http://www.facebook.com/profile.php?id=">Facebook</a>
-                        <a href="http://twitter.com/">Twitter</a>
-                        <a href="http://youtube.com/">YouTube</a>
+                    <div class="text-center icons">
+                        <a class="btn btn-social-icon btn-google" href="http://google.com/+"><i class="fa fa-google-plus fa-2x"></i></a>
+                        <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook fa-2x"></i></a>
+                        <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter fa-2x"></i></a>
+                        <a class="btn btn-social-icon btn-youtube" href="http://youtube.com/"><i class="fa fa-youtube fa-2x"></i></a>
                     </div>
                 </div>
            </div>
@@ -121,6 +144,7 @@
            </div>
         </div>
     </footer>
+
 
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>

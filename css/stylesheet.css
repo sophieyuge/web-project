@@ -37,9 +37,15 @@ button {
 .jumbotron{
   padding: 70px 30px 70px 30px;
   margin: 0px auto;
-  background: #b3dee5;
-  color: #bd7d42;
+  /*background: #b3dee5;*/
+  background-image: url("../img/hotel.jpg");
+  opacity: 0.9;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  color: #ffffff;
 }
+
 
 .address{
   font-size: 80%;
@@ -54,4 +60,24 @@ body{
 
 .navbar-dark{
   background-color: #245059;
+}
+
+div a + a {
+  padding-left: 10px;
+}
+
+.logo{
+  width: 50%;
+}
+
+.images{
+  max-width: 30%;
+  height: auto;
+}
+
+.tab-content {
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
 }
