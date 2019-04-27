@@ -1,0 +1,20 @@
+body {
+  color: #245059;
+  background-color: #EBF6FB;
+}
+
+button {
+  background-color: #D3A983;
+  width: 150px;
+  height: 20pm;
+  padding: 5px;
+  text-align: center;
+  border: 500px;
+  opacity: 0.6;
+}
+
+/*# sourceMappingURL=stylesheet.css.map */
+
+#other1{
+	display = "none";
+}
